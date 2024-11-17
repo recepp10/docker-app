@@ -1,0 +1,14 @@
+version: '20.10.23'
+
+services:
+  recepdeneme1:
+    image: dockerappdeneme:0.0.4
+    ports:
+      - 8085:8080
+    environment:
+      DB_URL: "**"
+      DB_USERNAME: "**"
+      DB_PASSWORD: "**"
+
+  postgresql:
+    image: bitnami/postgresql
